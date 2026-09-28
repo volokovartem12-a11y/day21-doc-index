@@ -1,0 +1,20 @@
+{
+  "description": "Контрольные вопросы для сравнения стратегий chunking. expected — подстроки пути файлов, где лежит ответ; section — подстрока раздела, где он должен найтись (необязательно).",
+  "questions": [
+    {"q": "Как история диалога сжимается в summary и когда запускается суммаризация?", "expected": ["day9-context-compression/context_manager.py"], "section": "ContextManager"},
+    {"q": "Что такое Sticky Facts и как обновляются факты после сообщения пользователя?", "expected": ["day10-context-strategies/context_strategies.py"], "section": "FactsStrategy"},
+    {"q": "Как создать ветку диалога от checkpoint и переключаться между ветками?", "expected": ["day10-context-strategies/context_strategies.py"], "section": "BranchingStrategy"},
+    {"q": "Какие три слоя памяти у агента и чем они отличаются по времени жизни?", "expected": ["day11-memory-layers/memory_layers.py", "day11-memory-layers/README.md"]},
+    {"q": "Как авто-роутер решает, в какой слой памяти сохранить данные?", "expected": ["day11-memory-layers/memory_layers.py", "day11-memory-layers/README.md"]},
+    {"q": "Почему старый адрес mcp.deepwiki.com/sse отвечает 410 Gone?", "expected": ["day16-mcp-connect/README.md"]},
+    {"q": "Как клиент без SDK читает ответ MCP-сервера в формате SSE-потока?", "expected": ["day16-mcp-connect/list_tools_raw.py"], "section": "McpHttpClient"},
+    {"q": "Как описать входные параметры MCP-инструмента через Field и description?", "expected": ["mcp_server.py", "crm_server.py", "kb_server.py", "tasks_server.py", "files_server.py"]},
+    {"q": "Как MCP-инструменты переводятся в формат function calling для модели?", "expected": ["mcp_client.py", "orchestrator.py"]},
+    {"q": "Как пайплайн проверяет передачу данных между шагами через sha256?", "expected": ["day19-mcp-pipeline/pipeline.py", "day19-mcp-pipeline/README.md"]},
+    {"q": "Как защититься от записи файла за пределы папки output?", "expected": ["day19-mcp-pipeline/tools_impl.py", "day20-mcp-orchestration/servers/files_impl.py"], "section": "_safe_filename"},
+    {"q": "Как оркестратор маршрутизирует одноимённые инструменты kb__search и files__search?", "expected": ["day20-mcp-orchestration/orchestrator.py", "day20-mcp-orchestration/README.md"]},
+    {"q": "Какие зависимости порядка вызовов проверяются в сценарии оркестрации?", "expected": ["day20-mcp-orchestration/scenario.py", "day20-mcp-orchestration/README.md"]},
+    {"q": "Какая экономия токенов получилась при сжатии истории на реальном API?", "expected": ["day9-context-compression/RESULTS.md", "day9-context-compression/README.md"]},
+    {"q": "Как работает поиск клиентов в CRM по телефону?", "expected": ["crm_api.py"], "section": "search_clients"}
+  ]
+}
